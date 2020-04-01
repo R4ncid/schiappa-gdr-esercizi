@@ -189,7 +189,7 @@ namespace Schiappa
 	 * @return l'attrezzo presente nella stanza.
      * 		   null se l'attrezzo non e' presente.
 	 */
-        public Attrezzo GetAttrezzo(String nomeAttrezzo)
+        public Attrezzo GetAttrezzo(string nomeAttrezzo)
         {
             Attrezzo attrezzoCercato;
             attrezzoCercato = null;

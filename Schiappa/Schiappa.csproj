@@ -39,6 +39,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Attrezzo.cs" />
+        <Compile Include="Borsa.cs" />
         <Compile Include="Comando.cs" />
         <Compile Include="Giocatore.cs" />
         <Compile Include="Labirinto.cs" />

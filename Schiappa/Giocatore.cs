@@ -3,10 +3,12 @@ namespace Schiappa
     public class Giocatore
     {
         private int energia;
+        private Borsa borsa;
         
         public Giocatore(int energiaIniziale)
         {
             energia = energiaIniziale;
+            borsa = new Borsa();
         }
 
 
@@ -23,6 +25,11 @@ namespace Schiappa
         public void SetEnergia(int nuovaEnergia)
         {
             energia = nuovaEnergia;
+        }
+
+        public Borsa GetBorsa()
+        {
+            return borsa;
         }
     }
 }
