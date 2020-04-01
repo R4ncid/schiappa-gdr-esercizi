@@ -7,13 +7,13 @@ namespace Schiappa
         private static int ENERGIA_INIZIALE = 20;
         private Labirinto labirinto;
 
-        private int energia;
+        private Giocatore giocatore;
         private bool finita;
 
         public Partita()
         {
             finita = false;
-            energia = ENERGIA_INIZIALE;
+            giocatore = new Giocatore(ENERGIA_INIZIALE);
             labirinto = new Labirinto();
         }
 
@@ -25,7 +25,7 @@ namespace Schiappa
 	 */
         public bool IsFinita()
         {
-            return finita || Vinta() || (energia == 0);
+            return finita || Vinta() || !giocatore.IsVivo() ;
         }
 
         /**
@@ -51,14 +51,9 @@ namespace Schiappa
             return labirinto;
         }
 
-        public int GetEnergia()
+        public Giocatore GetGiocatore()
         {
-            return energia;
-        }
-
-        public void SetEnergia(int energia)
-        {
-            this.energia = energia;
+            return giocatore;
         }
     }
 }

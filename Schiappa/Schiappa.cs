@@ -100,8 +100,8 @@ namespace Schiappa
             else
             {
                 partita.GetLabirinto().SetStanzaCorrente(prossimaStanza);
-                int energia = partita.GetEnergia();
-                partita.SetEnergia(energia--);
+                int energia = partita.GetGiocatore().GetEnergia();
+                partita.GetGiocatore().SetEnergia(energia--);
             }
             Console.WriteLine(partita.GetLabirinto().GetStanzaCorrente().GetDescrizione());
         }
