@@ -92,18 +92,18 @@ namespace Schiappa
             }
 
             Stanza prossimaStanza = null;
-            prossimaStanza = partita.GetStanzaCorrente().GetStanzaAdiacente(direzione);
+            prossimaStanza = partita.GetLabirinto().GetStanzaCorrente().GetStanzaAdiacente(direzione);
             if (prossimaStanza == null)
             {
                 Console.WriteLine("Direzione inesistente");
             }
             else
             {
-                partita.SetStanzaCorrente(prossimaStanza);
+                partita.GetLabirinto().SetStanzaCorrente(prossimaStanza);
                 int energia = partita.GetEnergia();
                 partita.SetEnergia(energia--);
             }
-            Console.WriteLine(partita.GetStanzaCorrente().GetDescrizione());
+            Console.WriteLine(partita.GetLabirinto().GetStanzaCorrente().GetDescrizione());
         }
         
         /**

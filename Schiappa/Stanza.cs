@@ -39,6 +39,7 @@ namespace Schiappa
             numeroAttrezzi = 0;
             attrezzi = new Attrezzo[NUMERO_MASSIMO_ATTREZZI];
         }
+        
 
         /**
      * Imposta una stanza adiacente.
@@ -206,9 +207,16 @@ namespace Schiappa
 	 * @param nomeAttrezzo
 	 * @return true se l'attrezzo e' stato rimosso, false altrimenti
 	 */
-        public bool RemoveAttrezzo(Attrezzo attrezzo)
+        public bool RemoveAttrezzo(string nomeAttrezzo)
         {
-            // TODO da implementare
+            for (int i = 0; i < attrezzi.Length; i++)
+            {
+                if (attrezzi[i].GetNome().Equals(nomeAttrezzo))
+                {
+                    attrezzi[i] = null;
+                    return true;
+                }
+            }
             return false;
         }
     }
