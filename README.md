@@ -19,3 +19,9 @@
  - Aggiungere un construttore ProcessatoreIstruzioni(Partita partita) a cui viene passata la partita
  - Spostare tutti i metodi legati alle azioni (Vai, Aiuto e Fine) all'interno della nuova classe
  - Aggiungere un metodo bool Processa(string istruzione) all'interno della classe ProcessatoreIstruzioni e copiare il contenuto di ProcessaIstruzione dentro di essa
+ 
+#### Esercizio 5
+- aggiungere comando guarda
+- aggiungere all'array dei comandi 'guarda'
+- creare un metodo privato Guarda alla classe **ProcessatoreIstruzioni** che stampa la descrizione della stanza corrente
+- aggiungere una condizione nel metodo processa che chiama il metodo Guarda
