@@ -25,3 +25,13 @@
 - aggiungere all'array dei comandi 'guarda'
 - creare un metodo privato Guarda alla classe **ProcessatoreIstruzioni** che stampa la descrizione della stanza corrente
 - aggiungere una condizione nel metodo processa che chiama il metodo Guarda
+
+#### Esercizio 6
+- risolvere errori nel codice
+- il comando fine non termina la partita 
+- se non scrivo niente e premo invio il programma si rompe
+- gestire i comandi con nome vuoto stampando a schermo "Inserire comando"
+
+#### Esercizio 7
+- Definire un interfaccia IAzione in una cartella Azioni
+- definire i metodi void SetPartita(Partita partita), void SetParametro(string parametro) ed string Esegui() nell'interfaccia
