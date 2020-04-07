@@ -35,3 +35,18 @@
 #### Esercizio 7
 - Definire un interfaccia IAzione in una cartella Azioni
 - definire i metodi void SetPartita(Partita partita), void SetParametro(string parametro) ed string Esegui() nell'interfaccia
+
+#### Esercizio 8
+- Riscrivere Aiuto Vai e Fine come classi che implementano l'intrefaccia IAzione
+
+#### Esercizio 9
+- Aggiungere l'azione Prendi che risponde al comando "prendi nomeAttrezzo" 
+- Nel metodo **Esegui** implementare la seguente logica:
+- Se l'attrezzo con nome nomeAttrezzo non è presente stampare il messaggio "non trovo " + nomeAttrezzo
+- Se l'attrezzo è presente rimuoverlo dalla stanza e aggiungerlo nella borsa del giocatore (usa i metodi **HasAttrezzo** e **GetAttrezzo** e **RemoveAttrezzo** di **Stanza** e **AddAttrezzo** di **Borsa**)
+
+
+#### Esercizio 10
+- Usando la stessa logica implementa l'azione **Posa** ( esempio di comando "posa nomeAttrezzo")
+- Controlla se l'attrezzo è nella borsa
+- Se c'è rimuovilo dalla borsa e aggiungilo alla stanza
